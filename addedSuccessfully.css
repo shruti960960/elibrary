@@ -1,0 +1,56 @@
+body{
+background-image:url('form1.jpg');
+backgroung-repeat:no-repeat;
+background-position : center;
+background-attachment:fixed;
+background-size : cover;
+}
+#container{
+display:flex;
+flex-direction:row;
+}
+#left{
+float:left;
+width:70vh;
+height:50vh;
+margin:100px;
+padding-top:60px;
+text-align:center;
+font-family:"Bungee",cursive;
+font-size:20px;
+color:#803A76;
+background-color:#D5C8D3;
+border:2px solid #803A76;
+border-radius:8px;
+}
+
+#button{
+background-color:#803A76;
+color:white;
+margin:20px;
+font-size:20px;
+padding-down:30px;
+padding-left:50px;
+padding-right:50px;
+border:2px solid #803A76;
+border-radius:8px;
+font-family:'Bungee', cursive;
+}
+
+#button:hover{
+background-color:blue;
+color:black;
+}
+#left1{
+float:left;
+width:70vh;
+height:50vh;
+margin:100px;
+text-align:center;
+font-family:"Bungee",cursive;
+font-size:20px;
+color:#803A76;
+background-color:#D5C8D3;
+border:2px solid #803A76;
+border-radius:8px;
+}

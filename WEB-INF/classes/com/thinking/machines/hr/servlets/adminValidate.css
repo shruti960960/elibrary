@@ -1,0 +1,153 @@
+body{
+background-color:#EECDFC;
+overflow:hidden;
+margin:0px;
+}
+
+#menubar{
+display:flex;
+flex-direction:row;
+background-color:purple;
+width:100%;
+height:15vh;
+}
+
+#left{
+float:left;
+width:10%;
+}
+
+#right ul{
+	display:inline-flex;
+	list-style:none;
+	float:right;
+	        
+	padding:15px;
+        width:90%;
+	color:white;
+	margin-top:0px;
+	justify-content:right;
+}
+
+#right ul li{
+justify-content:space-between;
+width:60px;
+margin-top:15px;
+margin-down:15px;
+text-align:right;
+margin-left:200px;
+}
+#right ul li a
+{
+text-decoration:none;
+color:white;
+}
+
+#right .active{
+display:flex;
+flex-direction:row;
+background-color:blue;
+color:white;
+width:20%;
+text-decoration:none;
+padding-top:10px;
+padding-down:40px;
+padding-left:30px;
+padding-right:70px;
+border:2px solid white;
+border-radius:8px;
+font-size:20px;
+}
+
+#right .active1{
+display:flex;
+flex-direction:row;
+background-color:blue;
+color:white;
+width:50%;
+text-decoration:none;
+padding-top:10px;
+padding-down:70px;
+padding-left:30px;
+padding-right:90px;
+border:2px solid white;
+border-radius:8px;
+font-size:20px;
+}
+
+#right .active1:hover{
+background-color:#EEBAFE;
+color:black;
+}
+
+#right .active:hover{
+background-color:#EEBAFE;
+color:black;}
+
+.container{
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+margin-top:0px;
+}
+
+#left1{
+float:left;
+width:30vh;
+height:100vh;
+color:purple;
+font-family:'Bungee',cursive;
+text-align:center;
+background-color:#EECDFC;
+padding-top:80px;
+margin-top:0px;
+font-size:20px;
+border:2px solid purple;
+text-decoration:none;
+}
+
+#left11{
+text-decoration:none;
+background-color:purple;
+color:white;
+border:2px solid blue;
+border-radius:8px;
+padding:3px;
+}
+
+#left12{
+text-decoration:none;
+background-color:purple;
+color:white;
+border:2px solid blue;
+border-radius:8px;
+padding:3px;
+}
+
+#left13{
+text-decoration:none;
+background-color:purple;
+color:white;
+border:2px solid blue;
+border-radius:8px;
+padding:3px;
+}
+
+#center{
+float:center;
+width:115vh;
+height:100vh;
+color:black;
+font-family:'Bungee',cursive;
+text-align:center;
+}
+
+#right1{
+float:right;
+width:30vh;
+height:100vh;
+justify-content:center;
+color:black;
+font-family:'Bungee',cursive;
+margin-top:310px;
+}

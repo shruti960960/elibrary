@@ -1,0 +1,63 @@
+body{
+//background-image:url('Oops.jpg');
+backgroung-repeat:no-repeat;
+background-position : center;
+background-attachment:fixed;
+background-size : cover;
+//background-color:rgb(255,255,172);
+background: linear-gradient(to right, rgb(255,255,121)   40%,rgb(255,172,132)  60%)
+
+}
+#container{
+display:flex;
+flex-direction:row;
+}
+#left{
+float:left;
+width:70vh;
+height:80vh;
+margin:80px;
+text-align:center;
+font-family:"Bungee",cursive;
+font-size:20px;
+color:#803A76;
+background-color:#D5C8D3;
+border:2px solid #803A76;
+border-radius:8px;
+}
+
+#button{
+background-color:rgb(128,64,0);
+color:white;
+margin:20px;
+font-size:20px;
+padding-down:30px;
+padding-left:50px;
+padding-right:50px;
+border:2px solid #803A76;
+border-radius:8px;
+font-family:'Bungee', cursive;
+}
+
+#left1{
+float:left;
+width:70vh;
+height:50vh;
+margin:100px;
+text-align:center;
+font-family:"Bungee",cursive;
+font-size:18px;
+color:rgb(128,64,0);
+background-color:rgb(255,183,111);
+border:2px solid gray;
+border-radius:8px;
+}
+#right{
+float:right;
+width:30vh;
+height:60vh;
+justify-content:center;
+color:black;
+font-family:'Bungee',cursive;
+margin-top:180px;
+}

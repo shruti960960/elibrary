@@ -1,0 +1,67 @@
+body{
+background-image:url('1.jpg');
+background-repeat : no-repeat;
+background-position : center;
+background-attachment:fixed;
+background-size : cover;
+}
+
+
+#heading{
+color:white;
+text-align:center;
+font-family:'Bungee Shade',cursive;
+font-size:80px;
+text-transform: uppercase;
+}
+
+
+#content{
+margin-top : 180px;
+margin-left : 40px;
+}
+
+#b1{
+        background-color : #231480;
+	color :  white;
+	padding:10px;
+	margin : 40px;
+	padding-left :100px;
+	padding-right:100px;
+	text-decoration : none;
+	border : 5px darkgray solid;
+	border-radius : 70%;
+	font-size : 20px;
+	text-align : center;
+	font-family:'Bungee', cursive;
+
+}
+
+#b2{
+        background-color : #231480;
+	color :  white;
+	padding:10px;
+	margin : 40px;
+	padding-left :75px;
+	padding-right:75px;
+	text-decoration : none;
+	border : 5px darkgray solid;
+	border-radius : 70%;
+	font-size : 20px;
+	text-align : center;
+	font-family:'Bungee', cursive;
+
+}
+
+#b1:hover{
+	background-color:#3392FF;
+}
+
+#b2:hover{
+	background-color:#3392FF;
+}
+
+
+
+
+

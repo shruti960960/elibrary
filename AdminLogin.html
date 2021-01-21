@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>Admin login</title>
+<link rel='stylesheet' type='text/css' href='elibraryadmin.css'>
+<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+<script>
+function adminValidate(frm)
+{
+var name=frm.aname.value.trim();
+if(name.length==0)
+{
+alert('name required');
+frm.aname.focus();
+return false;
+}
+var v='ABCDEEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz .';
+var e=0;
+while(e<name.length)
+{
+if(v.indexOf(name.charAt(e))==-1)
+{
+alert("Invalid characters in name");
+return false;
+}
+e++;
+}
+var pass=frm.apassword.value.trim();
+if(pass.length==0)
+{
+var passErrorSection=document.getElementById("passErrorSection");
+passErrorSection.innerHTML="Password Required";
+frm.apassword.focus();
+return false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<div class="container">
+<center>
+  <div class="left-section">
+    <div class="header">
+      <h1 class="animation a1">Welcome!</h1>
+   
+    </div>
+
+    <div class="form">
+<form action='/elibrary/adminValidate'  onSubmit='return adminValidate(this)'>
+      <input type='text' name='aname' id='aname' class="form-field animation a3" placeholder="Admin Name">
+      <input type='password' name='apassword' id='apassword' class="form-field animation a4" placeholder="Admin Password">
+<p class="animation a5"></p>   
+<div class="passError">
+  <span id='passErrorSection'></span>
+</div>
+     <button class="animation a6">LOGIN</button>
+</div>
+  </div></center>
+  <div class="right-section"></div>
+</div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>Librarian Login</title>
+<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+<link rel='stylesheet' type='text/css' href='elibrarylibrarian.css'>
+<script>
+function validateForm(frm)
+{
+var name=frm.lname.value.trim();
+if(name.length==0)
+{
+alert('Name required');
+frm.lname.focus();
+return false;
+}
+var v='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.';
+var e=0;
+while(e<name.length)
+{
+if(v.indexOf(name.charAt(e))==-1)
+{
+alert("Invalid characters in name");
+return false;
+}
+e++;
+}
+var pass=frm.lpassword.value.trim();
+if(pass.length==0)
+{
+var passError=document.getElementById('passErrorSection');
+passErrorSection.innerHTML='Password Required';
+frm.lpassword.focus();
+return false;
+}
+return true;
+}
+</script>
+
+</head>
+<body>
+<div class="container">
+  <div class="left-section">
+<center><a id='create' href='LibrarianNewAccount.html'>CREATE NEW ACCOUNT</a></center>
+
+<center>
+    <div class="header">
+      <h1 class="animation a1">Welcome!</h1>
+   
+    </div>
+
+    <div class="form">
+<form  action='/elibrary/LibrarianValidate'  onSubmit='return librarianValidate(this)'>
+
+      <input type='text' name='lname' id='name' class="form-field animation a3" placeholder="Librarian Name">
+      <input type='password' name='lpassword' id='password' class="form-field animation a4" placeholder="Librarian Password">
+<p class="animation a5"></p>   
+<div class="passError">
+  <span id='passErrorSection'></span>
+</div>
+<center>
+      <button class="animation a6">LOGIN</button><br><br><br><br><br><br>
+
+</center>
+</div>
+
+</div>
+
+<div class="right-section"></div>
+</div>
+</form>
+</body>
+</html>

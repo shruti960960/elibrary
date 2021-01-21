@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lan='en'>
+<head>
+<title>
+Librarian New Account
+</title>
+<link rel='stylesheet' type='text/css' href='elibrary1.css' />
+
+</head>
+<script>
+function validateForm(frm)
+{
+var name=frm.name.value.trim();
+if(name.length==0)
+{
+alert('Name required');
+frm.name.focus();
+return false;
+}
+var v='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz. '
+var e;
+e=0;
+while(e<name.length)
+{
+if(v.indexOf(name.charAt(e))==-1)
+{
+alert("Invalid characters in name,only alphabets,space and . are allowed");
+frm.name.focus();
+return false;
+}
+e++;
+}
+
+var password=frm.password.value.trim();
+if(password.length==0)
+{
+var PasswordErrorSection=document.getElementById("PasswordErrorSection");
+PasswordErrorSection.innerHTML="Required";
+frm.password.focus();
+return false;
+}
+
+var email=frm.email.value.trim();
+if(email.length==0)
+{
+var EmailErrorSection=document.getElementById("EmailErrorSection");
+EmailErrorSection.innerHTML="Required";
+frm.email.focus();
+return false;
+}
+
+var mobileno=frm.mobileno.value.trim();
+if(mobileno.length==0)
+{
+var MobileErrorSection=document.getElementById("MobileErrorSection");
+MobileErrorSection.innerHTML="Required";
+frm.mobileno.focus();
+return false;
+}
+
+var enroll=frm.enroll.value.trim();
+if(enroll.length==0)
+{
+var EnrollmentErrorSection=document.getElementById("EnrollmentErrorSection");
+EnrollmentErrorSection.innerHTML="Required";
+frm.enroll.focus();
+return false;
+}
+
+var year=frm.year.value.trim();
+if(year.length==0)
+{
+var YearErrorSection=document.getElementById("YearErrorSection");
+YearErrorSection.innerHTML="Required";
+frm.year.focus();
+return false;
+}
+
+var sem=frm.sem.value.trim();
+if(sem.length==0)
+{
+var SemesterErrorSection=document.getElementById("SemesterErrorSection");
+SemesterErrorSection.innerHTML="Required";
+frm.sem.focus();
+return false;
+}
+
+var branch=frm.branch.value.trim();
+if(branch.length==0)
+{
+var BranchErrorSection=document.getElementById("BranchErrorSection");
+BranchErrorSection.innerHTML="Required";
+frm.branch.focus();
+return false;
+}
+
+if(!this.form.accept.checked)
+{
+    alert('You must agree to the terms first.');
+    return false;
+}
+}
+</script>
+
+<body>
+<form action='/elibrary/addLibrarian' method='get' onSubmit='return validateForm(this)'>
+<div id='container'>
+<div id='left'>
+<center><div id='block'>
+<h1>Personal Information</h1>
+Name : <input type='text' name='name' id='name' placeholder='Enter Name'><br><br>
+
+Password : <input type='password' name='password' id='password' placeholder='Enter Password'>
+<span id='PasswordErrorSection'></span><br><br>
+
+Email Id : <input type='email' name='email' id='email' placeholder='Enter Email-Id'>
+<span id='EmailErrorSection'></span><br><br><br>
+
+Mobile No. : <input type='text' name='mobileno' id='mobileno'placeholder='Enter MobileNo.'>
+<span id='MobileErrorSection'></span><br><br><br>
+
+<h1>Academic Information</h1>
+Enrollment No. : <input type='text' name='enroll' id='enroll' placeholder='Enter Enrollment' >
+<span id='EnrollmentErrorSection'></span><br><br>
+
+Year/sem : <input type='number' name='year' id='year' min='1' max='5' placeholder='Enter Year' > 
+<span id='YearErrorSection'></span>
+<input type='number' name='sem' id='sem' min='1' max='10' placeholder='Enter Semester' >
+<span id='SemesterErrorSection'></span>
+<br><br>
+
+Branch : <input type='text' name='branch' id='branch' placeholder='Enter Branch'>
+<span id='BranchErrorSection'></span><br><br>
+
+<input type="checkbox" id="accept" name="accept">Accepting all terms and services.
+<br><br>
+<button id='button' type='submit'>Create</button>
+</div></center>
+</div>
+<div id='right'>
+
+</div>
+
+</div>
+</form>
+</body>
+</html>

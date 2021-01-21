@@ -1,0 +1,82 @@
+body{
+overflow:hidden;
+background-color:#D65A5A;
+margin:0px;
+padding:0px;
+}
+
+#newaccount{
+margin : 0px;
+padding : 50px;
+text-align:center;
+font-family:'Bungee',cursive;
+font-size:20px;
+}
+input[type=text] {
+  border: 2px solid #C13636;
+  border-radius: 4px;
+ width: 40%;
+}
+input[type=password] {
+  border: 2px solid #C13636;
+  border-radius: 4px;
+ width: 40%;
+}
+input[type=email] {
+  border: 2px solid #C13636;
+  border-radius: 4px;
+ width: 40%;
+}
+input[type=number] {
+  border: 2px solid #C13636;
+  border-radius: 4px;
+ width: 20%;
+}
+
+
+
+
+#container{
+display:flex;
+flex-direction:row;
+}
+
+#left{
+float:left;
+width:100vh;
+height:50vh;
+font-family:'Bungee',cursive;
+text-align:center;
+}
+
+#block{
+margin-top:70px;
+width:70vh;
+height:80vh;
+text-align:center;
+background-color:#FF8A8A;
+border:2px,#FF8A8A,solid;
+border-radius:8px;
+}
+
+#button{
+background-color:#C13636;
+border:2px solid #C13636;
+border-radius:8px;
+padding-right:20px;
+padding-down:20px;
+padding-left:20px;
+font-size:20px;
+}
+
+#right{
+float:right;
+width:100vh;
+height:100vh;
+background-image:url('ds2.jpg');
+background-repeat:no-repeat;
+background-position : center;
+background-size : cover;
+
+}
+

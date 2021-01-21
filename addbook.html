@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head><link rel="stylesheet" type="text/css" href="adminValidate.css">
+<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+</head>
+<body>
+<div id='menubar'>
+<div id='left'></div>
+<div id=right>
+<ul>
+<li><a class='active' href='/elibrary/index.html'>Home</a></li>
+<li><a class='active' href='/elibrary/contact.html'>Contact</a></li>
+<li><a class='active1' href='/elibrary/disclaimer.html'>Disclaimer</a></li>
+<li><a class='active' href='/elibrary/login.html'>Logout</a></li>
+</ul></div>
+</div><br>
+<div class='container'>
+
+<div id='left1'>
+<img src='admin123.png'><br>
+<a id='left11' href='/adminValidate'>AdminInfo</a><br><br>
+<a id='left12' href='/LibrarianValidate'>LibrarianInfo</a><br><br>
+<a id='left13' href='/Book'>BookInfo</a>
+</div>
+
+<div id='center4'>
+<div id='addbook'>
+<h1>ADD BOOK</h1>
+<form action='/elibrary/fileUploadPdf' method='post' enctype='multipart/form-data'>
+Book Id <input type='text' id='bid' name='bid' placeholder='Enter Id' style='margin-left:60px'><br>
+Book Name <input type='text' id='bname' name='bname' placeholder='Enter Name' style='margin-left:40px'><br>
+Book Author <input type='text' id='bauthor' name='bauthor' placeholder='Enter Author' style='margin-left:25px'><br>
+Book Pulisher <input type='text' id='bpublisher' name='bpublisher' placeholder='Enter Publisher' style='margin-left:10px'><br>
+
+Upload Pdf <input type='file' id='bfile' name='bfile' style='margin-left:20px'><br>
+<input type='submit' value='upload' id='upload'></input><br>
+
+
+</form>
+</div>
+</div>
+
+</body>
+</html>

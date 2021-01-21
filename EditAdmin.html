@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head><link rel="stylesheet" type="text/css" href="adminValidate.css">
+<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+</head>
+<body>
+<div id='menubar'>
+<div id='left'></div>
+<div id=right>
+<ul>
+<li><a class='active1' href='/elibrary/index.html'>Home</a></li>
+<li><a class='active' href='/elibrary/contact.html'>Contact</a></li>
+<li><a class='active1' href='/elibrary/disclaimer.html'>Disclaimer</a></li>
+<li><a class='active1' href='/elibrary/login.html'>Logout</a></li>
+</ul></div>
+</div><br>
+<div class='container'>
+
+<div id='left1'>
+<img src='admin123.png' style='height:180px'><br><br>
+<a id='left11' href='/adminValidate'>AdminInfo</a><br><br>
+<a id='left12' href='/LibrarianValidate'>LibrarianInfo</a><br><br>
+<a id='left13' href='/Book'>BookInfo</a>
+</div>
+ <div id='center' style='font-family:Arial'> 
+<form action='/elibrary/editAdmin'>
+<h1 style='font-size:80px;text-align:center'>Admin(Edit Module)</h1>
+<div id='edit'>
+<b>Name</b>
+<input type='text' id='title' name='title' maxlength='35' size='30' style='margin-left:86px'><br><br>
+<b>Password</b>
+<input type='text' id='password' name='password' maxlength='35' size='30' style='margin-left:53px'><br><br>
+<b>Email Address</b>
+<input type='text' id='text' name='emailAddress' maxlength='35' size='30' style='margin-left:15px'><br><br>
+<b>Mobile Number</b>
+<input type='text' id='mobileNumber' name='mobileNumber' maxlength='35' size='30' style='margin-left:10px'><br><br>
+<b>Home Address</b>
+<input type='text' id='homeAddress' name='homeAddress' maxlength='35' size='30' style='margin-left:15px'><br><br><br>
+<button type='submit' style='font-size:20px;border:2px solid purple;border-radius:8px;background-color:purple;color:white;transition-duration: 0.4s' id='button'>Update</button>
+<button type='Button' style='font-size:20px;border:2px solid purple;border-radius:8px;background-color:purple;color:white' onClick='cancelAddition()'>Cancel</button>
+</div>
+</form>
+</div>
+
+</div>
+
+
+</body>
+</html>
